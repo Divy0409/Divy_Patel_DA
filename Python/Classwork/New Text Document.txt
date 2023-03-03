@@ -1,0 +1,15 @@
+Dictionary :
+
+dictionary is a collection datatype which contain key and values in a pair
+
+list []
+tuple ()
+set {}
+dictionary {}
+
+It contain only unique keys
+dict = {
+	"key1": value,
+	"key2" :value,
+	}
+	
