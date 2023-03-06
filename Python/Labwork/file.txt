@@ -1,0 +1,3 @@
+Pyhton is easiest programming language.
+Java is most secure programming language.
+Javascript is moderate.
