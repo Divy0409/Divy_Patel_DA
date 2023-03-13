@@ -27,7 +27,7 @@ if choice in jwellery:
             for total_cost_gold in range(51000,999999):
                 actual_cost = (total_cost_gold*0.75)
 
-        elif age > 65:
+        else:
             for total_cost_gold in range(0,20999):
                 actual_cost = (total_cost_gold*1.0)
             for total_cost_gold in range(21000,30999):
@@ -48,7 +48,7 @@ if choice in jwellery:
             for total_cost_gold in range(51000,999999):
                 actual_cost = (total_cost_gold*0.7)
 
-        elif age > 65:
+        else:
             for total_cost_gold in range(0,20999):
                 actual_cost = (total_cost_gold*1.0)
             for total_cost_gold in range(21000,30999):
