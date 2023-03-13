@@ -12,7 +12,7 @@ quiz = {
 
 for i  in range(1,len(quiz)+1):
     print(quiz[i]['que'])
-    ans = input("enter the answer : ").lower()
+    ans = input("enter the answer : ")#.lower() for lower casing the answer but can be problemetic
     if ans == quiz[i]['ans']:
         print("right answer")
     else:
