@@ -2,11 +2,11 @@ def cost():
     cart = {}
     status = True
     while status:
-        product_name = input("enter product name:")
+        product_name = input("enter product name: ")
         qty = int(input("eneter qty: "))
 
         price = qty*jay_bhavani[product_name]
-        print(price)
+        print("Price: ",price)
 
         cart[product_name] = price
 
@@ -23,6 +23,7 @@ jay_bhavani = {
 }
 
 print("menu")
+
 for k,v in jay_bhavani.items():
     print(f"{k} Rs. {v}")
 
