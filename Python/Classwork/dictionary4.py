@@ -1,4 +1,8 @@
-product_menu = {}
+product_menu = {
+    'Apples' : {'qty' : 12,'amount': 250} ,
+    'Kiwi' : {'qty' : 12,'amount': 270},
+    'Grapes' : {'qty' : 12,'amount': 190}
+}
 
 menu = """
 
@@ -37,7 +41,35 @@ while status:
                 p_status = False
    
     elif choice == 2:
-        while p_status:
+        print("Product Menu:")
+        for k,v in product_menu.items():
+            print(f"{k}  {v}")
+
+        cart = {}
+
+        status = True
+        while status:
+            product_name = input("enter product name:")
+            qty_Cart = int(input("eneter qty: "))
+            
+            n = product_menu[product_name]['qty']
+           
+            if qty_Cart > n:
+                print("Cart exceeds Storage..")
+
+            else:
+                price = qty_Cart*product_menu[product_name]['amount']
+                print(price)
+                cart[product_name] = price
+                Remaining_stock = n - qty_Cart
+                product_menu[product_name]['qty'] = Remaining_stock
+                print(product_menu)
+
+            choice = input("do you want to prurchase more prodect: press y for yes and press n for no")
+            if choice == 'n' or choice=='N':
+                status=False
+                print(cart)   
+
             
 
     else:
