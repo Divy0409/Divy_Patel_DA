@@ -4,7 +4,7 @@ print("The original list : " + str(test_list))
 
 sublist = [8, 2, 1]
 
-
+# To check wether same item is present at any index in sublist
 res = any(test_list[idx: idx + len(sublist)] == sublist
           for idx in range(len(test_list) - len(sublist) + 1))
  
