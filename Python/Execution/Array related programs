@@ -1,0 +1,56 @@
+Program 1:
+
+Given an array A of N integers. Count the number of elements that have at least 1 elements greater than itself.
+
+Input :
+    A = [3, 1, 2]
+
+Ans : 2
+
+Brute force , it should work for different inputs.
+
+==================================================================================================================
+
+Program 2:
+
+Given an array A and an integer B. A pair(i, j) in the array is a good pair if i != j and (A[i] + A[j] == B). 
+Check if any good pair exist or not.
+return 1 if such pair exist in array or else return 0.
+
+Input :
+    I = [0, 1, 2, 3]
+    A = [1, 2, 3, 4]
+    B = 7
+
+
+Ans : 1
+
+Such pair is (i,j) = (3,4)
+
+==================================================================================================================
+
+Program 3:
+
+Given an array A of N integers. Also given are two integers B and C. Reverse the array A in the given range [B, C]
+
+Input :
+    A = [1, 2, 3, 4, 5, 6, 7]
+    B = 2
+    C = 5
+
+Ans : [1, 2, 6, 5, 4, 3, 7]
+
+We reverse the subarray [3, 4].
+
+==================================================================================================================
+
+Program 4:
+
+Given an integer array A of size N and an integer B, you have to return the
+same array after rotating it B times towards the right.
+You are not allowed to use any extra space.
+Input :
+    A = [1, 2, 3, 4, 5, 6, 7]
+    B = 3
+
+Ans : [5, 6, 7, 1, 2, 3, 4]

@@ -1,12 +1,12 @@
 test_list = [345, 893, 1948, 34, 2346]
  
-print("The original list is : " + str(test_list))
+print("The original list is : " +str(test_list))
  
 odd_sum = 0
 even_sum = 0
  
 for sub in test_list:
-    for ele in str(sub):
+    for ele in str(sub): # Type casting into string to access each element of the list..
          
         if int(ele) % 2 == 0:
             even_sum += int(ele)
